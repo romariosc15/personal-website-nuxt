@@ -6,5 +6,5 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  css: ['@/assets/css/transitions.css', '@/assets/css/main.css'],
+  css: ['@/assets/css/transitions.css', '@/assets/css/main.css', '@fortawesome/fontawesome-svg-core/styles.css'],
 })

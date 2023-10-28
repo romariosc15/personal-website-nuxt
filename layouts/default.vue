@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen bg-main">
-    <div class="container mx-auto px-32">
+  <div class="h-screen bg-gradient-to-r from-stone-200 via-stone-100 to-lime-50">
+    <div class="container mx-auto px-36 h-full space-y-8">
       <Navbar />
       <slot />
     </div>

@@ -2,23 +2,13 @@
 export default {
   content: [],
   theme: {
-    extend: {
-      colors: {
-        title: "#05004c",
-        primary: "#5e5e73",
-      },
-      backgroundColor: {
-        main: "#fefefe",
-        content: "#f0f1ff",
-        line: "#ff7273",
-      }
-    },
+    extend: {},
     fontFamily: {
-      sans: ["Poppins"],
-      serif: ["Poppins"],
-      mono: ["Poppins"],
-      display: ["Poppins"],
-      body: ["Poppins"]
+      sans: ["Roboto"],
+      serif: ["Roboto"],
+      mono: ["Roboto"],
+      display: ["Roboto"],
+      body: ["Roboto"]
     }
   },
   plugins: [],
