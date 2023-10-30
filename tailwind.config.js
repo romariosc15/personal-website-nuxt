@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["Roboto"],
-      serif: ["Roboto"],
-      mono: ["Roboto"],
-      display: ["Roboto"],
-      body: ["Roboto"]
+      sans: ["Poppins"],
+      serif: ["Poppins"],
+      mono: ["Poppins"],
+      display: ["Poppins"],
+      body: ["Poppins"]
     }
   },
   plugins: [],

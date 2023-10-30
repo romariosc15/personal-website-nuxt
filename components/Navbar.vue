@@ -1,9 +1,9 @@
 <template>
     <header class="flex flex-row py-4 items-center">
         <h1 class="text-3xl font-bold text-blue-950">ROMARIO</h1>
-        <ul class="ml-auto space-x-4 text-sm text-blue-950">
+        <ul class="ml-auto space-x-4 text-sm text-blue-950 font-medium">
             <li class="inline-block">
-                <ButtonLink to="/" text="Home" :cls="`px-5 py-2 ${isButtonActive('index')}`" icon ="fa-solid fa-home"/>
+                <ButtonLink to="/" text="Home" :cls="`px-5 py-2 ${isButtonActive('index')}`" icon="fa-solid fa-home"/>
             </li>
             <li class="inline-block">
                 <ButtonLink to="/about" text="About" :cls="`px-5 py-2 ${isButtonActive('about')}`" icon="fa-solid fa-user"/>
@@ -21,6 +21,6 @@
 <script setup>
     const isButtonActive = (current) => {
         const route = useRoute()
-        return route.name === current ? 'bg-blue-950 text-white' : ''
+        return route.name === current ? 'bg-blue-950 text-white' : 'bg-white'
     }
 </script>
