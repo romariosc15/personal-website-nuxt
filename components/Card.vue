@@ -1,5 +1,5 @@
 <template>
-    <div :class="`${getBackgroundColor()} rounded-md ${props.cls}`">
+    <div :class="`${backgroundColor ? backgroundColor : getBackgroundColor()} rounded-md ${props.cls}`">
         <slot />
     </div>
 </template>
@@ -11,13 +11,18 @@
             required: false,
             default: 'p-4',
         },
+        backgroundColor: {
+            type: String,
+            required: false,
+            default: '',
+        }
     })
     let selector = Math.floor(Math.random() * 5)
     const getBackgroundColor = () => {
-        if(selector === 0) return 'bg-rose-100'
-        if(selector === 1) return 'bg-cyan-100'
-        if(selector === 2) return 'bg-lime-100'
-        if(selector === 3) return 'bg-amber-100'
-        if(selector === 4) return 'bg-orange-100'
+        if(selector === 0) return 'bg-sky-500'
+        if(selector === 1) return 'bg-teal-500'
+        if(selector === 2) return 'bg-pink-500'
+        if(selector === 3) return 'bg-purple-500'
+        if(selector === 4) return 'bg-orange-500'
     }
 </script>

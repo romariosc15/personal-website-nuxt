@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-white p-12 rounded-lg shadow-lg mt-8">
+    <div class="bg-slate-700 p-12 rounded-lg shadow-lg mt-8">
         <div class="flex flex-row items-center space-x-6">
-            <h1 class="text-4xl font-bold text-title text-blue-950">Resume</h1>
-            <div class="bg-orange-400 w-40 h-0.5"></div>
+            <h1 class="text-4xl font-bold text-title text-white">Resume</h1>
+            <div class="bg-yellow-500 w-40 h-1 rounded-lg"></div>
         </div>
-        <div class="mt-10 grid grid-cols-3 gap-6 text-blue-950">
+        <div class="mt-10 grid grid-cols-3 gap-6 text-white">
             <div>
                 <h2 class="text-2xl font-medium">
                     <font-awesome-icon icon="fa-solid fa-graduation-cap" class="mr-2" /> Education
@@ -16,8 +16,8 @@
                     >
                         <div>
                             <span class="text-sm">{{ item.period }}</span>
-                            <h3 class="text-xl font-medium">{{ item.career }}</h3>
-                            <p>{{ `${item.entity} - ${item.location}` }}</p>
+                            <h3 class="text-xl font-semibold">{{ item.career }}</h3>
+                            <p class="font-medium">{{ `${item.entity} - ${item.location}` }}</p>
                         </div>
                     </Card>
                 </div>
@@ -33,8 +33,8 @@
                     >
                         <div>
                             <span class="text-sm">{{ item.period }}</span>
-                            <h3 class="text-xl font-medium">{{ item.position }}</h3>
-                            <p>{{ `${item.company} - ${item.location}` }}</p>
+                            <h3 class="text-xl font-semibold">{{ item.position }}</h3>
+                            <p class="font-medium">{{ `${item.company} - ${item.location}` }}</p>
                         </div>
                     </Card>
                 </div>
@@ -50,8 +50,8 @@
                     >
                         <div>
                             <span class="text-sm">{{ item.period }}</span>
-                            <h3 class="text-xl font-medium">{{ item.topic }}</h3>
-                            <p>{{ `${item.entity}` }}</p>
+                            <h3 class="text-xl font-semibold">{{ item.topic }}</h3>
+                            <p class="font-medium">{{ `${item.entity}` }}</p>
                         </div>
                     </Card>
                 </div>
@@ -65,7 +65,7 @@
         {
             id: 1,
             entity: 'Universidad Nacional de Moquegua',
-            period: '2015 - 2019',
+            period: 'March 2015 - December 2019',
             career: 'Systems engineering',
             location: 'Ilo'
         }
@@ -90,6 +90,13 @@
             company: 'Oktana',
             period: 'September 2020 - Octubre 2021',
             position: 'Software Engineer',
+            location: 'Remote'
+        },
+        {
+            id: 104,
+            company: 'Innovahora',
+            period: 'September 2019 - August 2020',
+            position: 'Full-Stack Web Developer',
             location: 'Remote'
         },
     ]
