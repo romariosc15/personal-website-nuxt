@@ -1,11 +1,11 @@
 <template>
     <div class="bg-slate-700 shadow-lg mt-8 rounded-lg">
-        <div class="flex flex-row items-center space-x-6 px-12 pt-12">
-            <h1 class="text-4xl font-bold text-title text-white">About me</h1>
-            <div class="bg-yellow-500 w-40 h-1 rounded-lg"></div>
+        <div class="flex flex-row items-center space-x-6 px-4 lg:px-12 pt-6 lg:pt-12">
+            <h1 class="text-3xl lg:text-4xl font-bold text-title text-white">About me</h1>
+            <div class="bg-yellow-500 w-28 lg:w-40 h-1 rounded-lg"></div>
         </div>
-        <div class="mt-10">
-            <div class="grid grid-cols-3 gap-8 px-12 pb-12">
+        <div class="mt-6 lg:mt-10">
+            <div class="lg:grid lg:grid-cols-3 lg:gap-8 space-y-4 px-4 lg:px-12 pb-6 lg:pb-12">
                 <div>
                     <img class="rounded-xl object-cover w-full min-h-[300px]" src="@/assets/images/index.jpg" alt="Profile picture">
                 </div>
@@ -19,7 +19,7 @@
                     </div>
                     <div>
                         <h2 class="text-2xl font-semibold text-white">Personal info</h2>
-                        <div class="mt-4 flex flex-row gap-6">
+                        <div class="mt-4 flex flex-col lg:flex-row flex-wrap gap-6">
                             <div class="flex flex-row items-center gap-4">
                                 <font-awesome-icon icon="fa-solid fa-envelope" size="xl" class="text-yellow-500" />
                                 <div>
@@ -45,12 +45,12 @@
                     </div>
                 </div>
             </div>
-            <div class="p-12 bg-slate-600 rounded-b-lg">
+            <div class="p-6 lg:p-12 bg-slate-600 rounded-b-lg">
                 <div class="flex flex-row items-center space-x-6">
-                    <h2 class="text-4xl text-white font-bold">
+                    <h2 class="text-3xl lg:text-4xl text-white font-bold">
                         <font-awesome-icon icon="fa-solid fa-graduation-cap" class="mr-2" /> Skills
                     </h2>
-                    <div class="bg-yellow-500 w-40 h-1 rounded-lg"></div>
+                    <div class="bg-yellow-500 w-28 h-1 rounded-lg"></div>
                 </div>
                 <div class="flex flex-row flex-wrap gap-4 text-sm mt-10 text-white font-medium">
                     <Card
