@@ -33,13 +33,17 @@
         />
       </div>
       <div>
-        <NavigationButtonLink
+        <NuxtLink
           to="https://drive.google.com/file/d/1853-ZefTNo52pOmyNsmBaRn_1mfFy0QC/view?usp=sharing"
-          text="Download CV"
-          icon="fa-solid fa-download"
-          :external="true"
-          cls="text-white text-base lg:text-lg font-semibold px-6 py-3"
-        />
+          target="_blank"
+          rel="noopener noreferrer"
+          :class="`text-white text-base lg:text-lg font-semibold px-6 py-3 rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition-colors flex flex-row items-center`"
+        >
+          <font-awesome-icon
+            class="mr-2"
+            icon="fa-solid fa-download"
+          /> {{ $t('downloadCv') }}
+        </NuxtLink>
       </div>
     </div>
   </div>

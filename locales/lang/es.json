@@ -1,6 +1,7 @@
 {
     "home": "Inicio",
     "about": "Sobre mi",
-    "resume": "Resumen",
-    "work": "Mi trabajo"
+    "resume": "Currículum",
+    "work": "Mi trabajo",
+    "downloadCv": "Descargar CV"
 }

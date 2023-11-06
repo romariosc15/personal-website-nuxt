@@ -5,11 +5,11 @@
   >
     <div class="relative">
       <ListboxButton
-        class="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm hover:cursor-pointer"
+        :class="`transition-colors ${props.cls ? props.cls : 'bg-white'} relative w-full cursor-default rounded-lg py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-red-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm hover:cursor-pointer`"
       >
         <span class="block truncate">{{ selectedItem.name }}</span>
         <span
-          class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
+          class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"
         >
           <font-awesome-icon
             icon="fa-solid fa-chevron-down"
@@ -32,9 +32,9 @@
             as="template"
           >
             <li
-              class="cursor-default hover:cursor-pointer hover:bg-amber-100 px-4 py-2"
+              class="cursor-default hover:cursor-pointer hover:bg-yellow-100 px-4 py-2"
             >
-                {{ item.name }}
+              {{ item.name }}
             </li>
           </ListboxOption>
         </ListboxOptions>
@@ -66,6 +66,11 @@ const props = defineProps({
         default: '',
     },
     idProperty: {
+        type: String,
+        required: false,
+        default: '',
+    },
+    cls: {
         type: String,
         required: false,
         default: '',

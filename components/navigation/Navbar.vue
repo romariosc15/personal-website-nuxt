@@ -13,7 +13,7 @@
       >
         <NuxtLink
           :to="localePath(route.url)"
-          :class="`px-5 py-2.5 ${isButtonActive(route.componentName)} rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition-colors flex flex-row items-center`"
+          :class="`px-5 py-2.5 ${isButtonActive(localePath(route.url))} rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition-colors flex flex-row items-center`"
         >
           <font-awesome-icon
             v-if="route.icon"
@@ -68,6 +68,7 @@
     <InputListbox
       v-model="currentLanguage"
       class="ml-6 w-20"
+      cls="text-white border border-transparent hover:bg-red-500 px-5 py-2.5 font-semibold"
       :options="languages"
       @update:model-value="onUpdate"
     />
@@ -80,7 +81,7 @@ const { setLocale, locale, t } = useI18n()
 const localePath = useLocalePath()
 const isButtonActive = (current) => {
   const route = useRoute();
-  return route.name === current.toLowerCase() ? 'bg-red-500 text-white' : '';
+  return route.path === current.toLowerCase() ? 'bg-red-500 text-white' : '';
 };
 const routes = reactive([
   {name: t('home'), icon: 'fa-solid fa-home', url: '/', componentName: 'index'},
