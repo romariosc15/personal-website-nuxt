@@ -93,7 +93,7 @@
           </h2>
           <div class="bg-yellow-500 w-28 h-1 rounded-lg" />
         </div>
-        <div class="flex flex-row flex-wrap gap-4 text-sm mt-10 text-white font-medium">
+        <div class="flex flex-row flex-wrap gap-4 text-sm mt-6 lg:mt-10 text-white font-medium">
           <ContainerCard
             v-for="item in skills"
             :key="item"

@@ -11,20 +11,24 @@
         :key="route.name"
         class="inline-block"
       >
-        <NavigationButtonLink
-          :to="route.url"
-          :text="route.name"
-          :cls="`px-5 py-2.5 ${isButtonActive(route.componentName)}`"
-          :icon="route.icon"
-        />
+        <NuxtLink
+          :to="localePath(route.url)"
+          :class="`px-5 py-2.5 ${isButtonActive(route.componentName)} rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition-colors flex flex-row items-center`"
+        >
+          <font-awesome-icon
+            v-if="route.icon"
+            :class="`${route.name ? 'mr-2' : ''}`"
+            :icon="route.icon"
+          /> {{ route.name }}
+        </NuxtLink>
       </li>
     </ul>
     <Menu
       as="div"
-      class="relative inline-block text-left"
+      class="relative text-left block lg:hidden"
     >
       <div>
-        <MenuButton class="block lg:hidden text-gray-200">
+        <MenuButton class="text-gray-200">
           <font-awesome-icon
             icon="fa-solid fa-bars"
             size="xl"
@@ -61,19 +65,35 @@
         </MenuItems>
       </transition>
     </Menu>
+    <InputListbox
+      v-model="currentLanguage"
+      class="ml-6 w-20"
+      :options="languages"
+      @update:model-value="onUpdate"
+    />
   </header>
 </template>
 
 <script setup>
 import {Menu, MenuButton, MenuItem, MenuItems} from '@headlessui/vue';
+const { setLocale, locale, t } = useI18n()
+const localePath = useLocalePath()
 const isButtonActive = (current) => {
   const route = useRoute();
   return route.name === current.toLowerCase() ? 'bg-red-500 text-white' : '';
 };
-const routes = [
-  {name: 'Home', icon: 'fa-solid fa-home', url: '/', componentName: 'index'},
-  {name: 'About', icon: 'fa-solid fa-user', url: '/about', componentName: 'about'},
-  {name: 'Resume', icon: 'fa-solid fa-file-lines', url: '/resume', componentName: 'resume'},
-  {name: 'Work', icon: 'fa-solid fa-laptop-code', url: '/work', componentName: 'work'},
-];
+const routes = reactive([
+  {name: t('home'), icon: 'fa-solid fa-home', url: '/', componentName: 'index'},
+  {name: t('about'), icon: 'fa-solid fa-user', url: '/about', componentName: 'about'},
+  {name: t('resume'), icon: 'fa-solid fa-file-lines', url: '/resume', componentName: 'resume'},
+  {name: t('work'), icon: 'fa-solid fa-laptop-code', url: '/work', componentName: 'work'},
+]);
+const languages = [
+  {id: 'es', name: 'es'},
+  {id: 'en', name: 'en'},
+]
+const currentLanguage = ref({id: locale.value, name: locale.value})
+const onUpdate = (newValue) => {
+  setLocale(newValue.id)
+}
 </script>
