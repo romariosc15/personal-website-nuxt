@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavigationNavbar />
-    <div class="bg-slate-700 px-4 py-6 md:p-8 lg:p-12 rounded-lg shadow-lg mt-8">
+    <div class="bg-slate-700 px-4 py-6 md:p-8 lg:p-12 rounded-lg shadow-lg mt-10">
       <div class="flex flex-row items-center space-x-6">
         <h1 class="text-3xl lg:text-4xl font-bold text-title text-white">
           {{ $t('resume.title') }}
