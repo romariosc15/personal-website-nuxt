@@ -1,7 +1,29 @@
 {
-    "home": "Home",
-    "about": "About",
-    "resume": "Resume",
-    "work": "Work",
-    "downloadCv": "Download CV"
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "resume": "Resume",
+        "work": "Work"
+    },
+    "home": {
+        "downloadCv": "Download CV"
+    },
+    "about": {
+        "title": "About me",
+        "aboutDescription": "I'm front-end developer from Ilo, Peru, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.",
+        "personalInfo": "Personal info",
+        "email": "Email",
+        "location": "Location",
+        "whoAmI": "Who am I?",
+        "skills": "Skills"
+    },
+    "resume": {
+        "title": "Resume",
+        "education": "Education",
+        "experience": "Experience",
+        "certifications": "Certifications"
+    },
+    "work": {
+        "title": "Portfolio"
+    }
 }

@@ -4,7 +4,7 @@
     <div class="bg-slate-700 shadow-lg mt-8 rounded-lg">
       <div class="flex flex-row items-center space-x-6 px-4 lg:px-12 pt-6 lg:pt-12">
         <h1 class="text-3xl lg:text-4xl font-bold text-title text-white">
-          About me
+          {{ $t('about.title') }}
         </h1>
         <div class="bg-yellow-500 w-28 lg:w-40 h-1 rounded-lg" />
       </div>
@@ -20,16 +20,15 @@
           <div class="col-span-2 space-y-6">
             <div>
               <h2 class="text-2xl font-semibold text-white">
-                Who am I?
+                {{ $t('about.whoAmI') }}
               </h2>
               <p class=" text-gray-200 mt-4">
-                I'm front-end developer from Ilo, Peru, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-                My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+                {{ $t('about.aboutDescription') }}
               </p>
             </div>
             <div>
               <h2 class="text-2xl font-semibold text-white">
-                Personal info
+                {{ $t('about.personalInfo') }}
               </h2>
               <div class="mt-4 flex flex-col lg:flex-row flex-wrap gap-6">
                 <div class="flex flex-row items-center gap-4">
@@ -40,7 +39,7 @@
                   />
                   <div>
                     <p class="text-sm text-white">
-                      E-mail
+                      {{ $t('about.email') }}
                     </p>
                     <a
                       class="font-medium text-gray-200 transition-colors hover:text-red-500"
@@ -74,7 +73,7 @@
                   />
                   <div>
                     <p class="text-sm text-white">
-                      Location
+                      {{ $t('about.location') }}
                     </p>
                     <h6 class="font-medium text-gray-200">
                       Ilo, Peru
@@ -91,7 +90,7 @@
               <font-awesome-icon
                 icon="fa-solid fa-graduation-cap"
                 class="mr-2"
-              /> Skills
+              /> {{ $t('about.skills') }}
             </h2>
             <div class="bg-yellow-500 w-28 h-1 rounded-lg" />
           </div>

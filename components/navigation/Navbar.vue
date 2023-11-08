@@ -84,10 +84,10 @@ const isButtonActive = (current) => {
   return route.path === current.toLowerCase() ? 'bg-red-500 text-white' : '';
 };
 const routes = reactive([
-  {name: t('home'), icon: 'fa-solid fa-home', url: '/', componentName: 'index'},
-  {name: t('about'), icon: 'fa-solid fa-user', url: '/about', componentName: 'about'},
-  {name: t('resume'), icon: 'fa-solid fa-file-lines', url: '/resume', componentName: 'resume'},
-  {name: t('work'), icon: 'fa-solid fa-laptop-code', url: '/work', componentName: 'work'},
+  {name: t('navbar.home'), icon: 'fa-solid fa-home', url: '/', componentName: 'index'},
+  {name: t('navbar.about'), icon: 'fa-solid fa-user', url: '/about', componentName: 'about'},
+  {name: t('navbar.resume'), icon: 'fa-solid fa-file-lines', url: '/resume', componentName: 'resume'},
+  {name: t('navbar.work'), icon: 'fa-solid fa-laptop-code', url: '/work', componentName: 'work'},
 ]);
 const languages = [
   {id: 'es', name: 'es'},

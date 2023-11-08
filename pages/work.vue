@@ -4,7 +4,7 @@
     <div class="bg-slate-700 p-4 lg:p-12 rounded-lg shadow-lg mt-8">
       <div class="flex flex-row items-center space-x-6">
         <h1 class="text-3xl lg:text-4xl font-bold text-title text-white">
-          Portfolio
+          {{ $t('work.title') }}
         </h1>
         <div class="bg-yellow-500 w-28 lg:w-40 h-1 rounded-lg" />
       </div>

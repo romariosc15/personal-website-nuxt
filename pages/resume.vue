@@ -4,7 +4,7 @@
     <div class="bg-slate-700 p-4 lg:p-12 rounded-lg shadow-lg mt-8">
       <div class="flex flex-row items-center space-x-6">
         <h1 class="text-3xl lg:text-4xl font-bold text-title text-white">
-          Resume
+          {{ $t('resume.title') }}
         </h1>
         <div class="bg-yellow-500 w-28 lg:w-40 h-1 rounded-lg" />
       </div>
@@ -14,7 +14,7 @@
             <font-awesome-icon
               icon="fa-solid fa-graduation-cap"
               class="mr-2"
-            /> Education
+            /> {{ $t('resume.education') }}
           </h2>
           <div class="mt-4 gap-4 lg:gap-6 grid md:grid-cols-2 lg:grid-cols-1">
             <ContainerCard
@@ -38,7 +38,7 @@
             <font-awesome-icon
               icon="fa-solid fa-briefcase"
               class="mr-2"
-            /> Experience
+            /> {{ $t('resume.experience') }}
           </h2>
           <div class="mt-4 gap-4 lg:gap-6 grid md:grid-cols-2 lg:grid-cols-1">
             <ContainerCard
@@ -62,7 +62,7 @@
             <font-awesome-icon
               icon="fa-solid fa-award"
               class="mr-2"
-            /> Certifications
+            /> {{ $t('resume.certifications') }}
           </h2>
           <div class="mt-4 gap-4 lg:gap-6 grid md:grid-cols-2 lg:grid-cols-1">
             <ContainerCard

@@ -42,7 +42,7 @@
           <font-awesome-icon
             class="mr-2"
             icon="fa-solid fa-download"
-          /> {{ $t('downloadCv') }}
+          /> {{ $t('home.downloadCv') }}
         </NuxtLink>
       </div>
     </div>
