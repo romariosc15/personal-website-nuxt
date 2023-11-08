@@ -11,7 +11,7 @@
       <div class="xl:grid xl:grid-cols-3 items-center lg:gap-8 px-4 md:px-12 lg:px-24 xl:px-12 pb-6 md:pb-12 xl:pb-12 mt-6 lg:mt-10">
         <div>
           <img
-            class="rounded-xl object-cover w-full"
+            class="rounded-xl object-cover w-full md:w-3/4 lg:w-3/5 xl:w-full mx-auto"
             src="@/assets/images/index.jpg"
             alt="Profile picture"
           >
@@ -91,7 +91,7 @@
               class="mr-2 !hidden md:!inline-block"
             /> {{ $t('about.skills') }}
           </h2>
-          <div class="bg-yellow-500 w-24 h-1 rounded-lg" />
+          <div class="bg-yellow-500 w-24 lg:w-40 h-1 rounded-lg" />
         </div>
         <div class="flex flex-row flex-wrap gap-4 text-sm mt-6 lg:mt-10 text-white font-medium">
           <ContainerCard

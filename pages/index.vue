@@ -14,7 +14,7 @@
           Romario Sarmiento
         </h1>
         <p class="text-white text-xl lg:text-2xl font-medium text-title">
-          Front-end developer
+          Full-stack developer
         </p>
         <div class="bg-yellow-500 w-20 h-1 ml-auto mr-auto mt-4 mb-1 rounded-lg" />
       </div>
