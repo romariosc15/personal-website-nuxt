@@ -1,14 +1,14 @@
 <template>
   <div>
     <NavigationNavbar />
-    <div class="bg-slate-700 p-4 lg:p-12 rounded-lg shadow-lg mt-8">
+    <div class="bg-slate-700 px-4 py-6 md:p-8 lg:p-12 rounded-lg shadow-lg mt-8">
       <div class="flex flex-row items-center space-x-6">
         <h1 class="text-3xl lg:text-4xl font-bold text-title text-white">
           {{ $t('resume.title') }}
         </h1>
         <div class="bg-yellow-500 w-24 lg:w-40 h-1 rounded-lg" />
       </div>
-      <div class="mt-6 lg:mt-10 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 text-white">
+      <div class="mt-6 lg:mt-10 grid grid-cols-1 lg:grid-cols-3 gap-4 xl:gap-6 text-white">
         <div>
           <h2 class="text-xl lg:text-2xl font-medium">
             <font-awesome-icon
@@ -22,11 +22,11 @@
               :key="item.id"
             >
               <div>
-                <span class="text-xs lg:text-sm">{{ item.period }}</span>
-                <h3 class="text-lg lg:text-xl font-semibold">
+                <span class="text-xs xl:text-sm">{{ item.period }}</span>
+                <h3 class="text-lg xl:text-xl font-semibold">
                   {{ item.career }}
                 </h3>
-                <p class="text-sm lg:text-base font-medium">
+                <p class="text-sm xl:text-base font-medium">
                   {{ `${item.entity} - ${item.location}` }}
                 </p>
               </div>
@@ -46,11 +46,11 @@
               :key="item.id"
             >
               <div>
-                <span class="text-xs lg:text-sm">{{ item.period }}</span>
-                <h3 class="text-lg lg:text-xl font-semibold">
+                <span class="text-xs xl:text-sm">{{ item.period }}</span>
+                <h3 class="text-lg xl:text-xl font-semibold">
                   {{ item.position }}
                 </h3>
-                <p class="text-sm lg:text-base font-medium">
+                <p class="text-sm xl:text-base font-medium">
                   {{ `${item.company} - ${item.location}` }}
                 </p>
               </div>
@@ -70,11 +70,11 @@
               :key="item.id"
             >
               <div>
-                <span class="text-xs lg:text-sm">{{ item.period }}</span>
-                <h3 class="text-lg lg:text-xl font-semibold">
+                <span class="text-xs xl:text-sm">{{ item.period }}</span>
+                <h3 class="text-lg xl:text-xl font-semibold">
                   {{ item.topic }}
                 </h3>
-                <p class="text-sm lg:text-base font-medium">
+                <p class="text-sm xl:text-base font-medium">
                   {{ `${item.entity}` }}
                 </p>
               </div>

@@ -5,7 +5,7 @@
       src="@/assets/images/logo-rs.png"
       alt="App logo"
     >
-    <ul class="hidden lg:block ml-auto space-x-6 text-sm text-white font-medium">
+    <ul class="hidden lg:block ml-auto lg:space-x-4 xl:space-x-6 text-sm text-white font-medium">
       <li
         v-for="route in routes"
         :key="route.name"
@@ -25,7 +25,7 @@
     </ul>
     <InputListbox
       v-model="currentLanguage"
-      class="lg:ml-6 w-20"
+      class="lg:ml-4 xl:ml-6 w-20"
       cls="text-sm lg:text-base text-white border border-slate-900 hover:bg-red-500 px-4 lg:px-5 py-2 lg:py-2.5 font-medium lg:font-semibold"
       :options="languages"
       @update:model-value="onUpdate"
