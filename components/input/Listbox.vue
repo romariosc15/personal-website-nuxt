@@ -5,7 +5,7 @@
   >
     <div class="relative">
       <ListboxButton
-        :class="`transition-colors ${props.cls ? props.cls : 'bg-white'} relative w-full cursor-default rounded-lg py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-red-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm hover:cursor-pointer`"
+        :class="`transition-colors ${props.cls ? props.cls : 'bg-white'} relative w-full cursor-default rounded-lg py-2 pl-3 pr-10 text-left focus:outline-none focus-visible:border-red-500 focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm hover:cursor-pointer`"
       >
         <span class="block truncate">{{ selectedItem.name }}</span>
         <span

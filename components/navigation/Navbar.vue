@@ -23,6 +23,13 @@
         </NuxtLink>
       </li>
     </ul>
+    <InputListbox
+      v-model="currentLanguage"
+      class="lg:ml-6 w-20"
+      cls="text-white border border-slate-900 hover:bg-red-500 px-5 py-2.5 font-medium lg:font-semibold"
+      :options="languages"
+      @update:model-value="onUpdate"
+    />
     <Menu
       as="div"
       class="relative text-left block lg:hidden"
@@ -52,7 +59,7 @@
               v-slot="{ active }"
             >
               <NuxtLink
-                :to="route.url"
+                :to="localePath(route.url)"
                 :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']"
               >
                 <font-awesome-icon
@@ -65,13 +72,6 @@
         </MenuItems>
       </transition>
     </Menu>
-    <InputListbox
-      v-model="currentLanguage"
-      class="ml-6 w-20"
-      cls="text-white border border-transparent hover:bg-red-500 px-5 py-2.5 font-semibold"
-      :options="languages"
-      @update:model-value="onUpdate"
-    />
   </header>
 </template>
 
