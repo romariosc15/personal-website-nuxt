@@ -6,7 +6,7 @@
         <h1 class="text-3xl lg:text-4xl font-bold text-title text-white">
           {{ $t('work.title') }}
         </h1>
-        <div class="bg-yellow-500 w-28 lg:w-40 h-1 rounded-lg" />
+        <div class="bg-yellow-500 w-24 lg:w-40 h-1 rounded-lg" />
       </div>
       <div class="mt-6 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
         <ContainerCard
@@ -22,16 +22,16 @@
               rel="noopener noreferrer"
             >
               <img
-                class="rounded-xl object-cover w-full h-[250px] scale-100 hover:scale-110 transition-transform transform"
+                class="rounded-xl object-cover w-full h-[200px] lg:h-[250px] scale-100 hover:scale-110 transition-transform transform"
                 :src="item.image"
                 :alt="item.name"
               >
             </a>
             <div class="mt-4">
-              <h3 class="text-2xl font-semibold text-white">
+              <h3 class="text-xl lg:text-2xl font-semibold text-white">
                 {{ item.name }}
               </h3>
-              <p class="text-base text-gray-200 mt-2">
+              <p class="text-sm lg:text-base text-gray-200 mt-2">
                 {{ item.description }}
               </p>
               <div class="space-x-4 mt-4">
