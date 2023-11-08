@@ -16,21 +16,29 @@
         <p class="text-white text-xl lg:text-2xl font-medium text-title">
           Front-end developer
         </p>
-        <div class="bg-yellow-500 w-20 h-1 ml-auto mr-auto mt-3 rounded-lg" />
+        <div class="bg-yellow-500 w-20 h-1 ml-auto mr-auto mt-4 mb-1 rounded-lg" />
       </div>
       <div class="flex flex-row gap-4">
-        <NavigationButtonLink
+        <NuxtLink
           to="https://www.linkedin.com/in/romariosarmiento/"
-          icon="fa-brands fa-linkedin-in"
-          :external="true"
-          cls="text-xl text-white px-3.5 py-2.5"
-        />
-        <NavigationButtonLink
+          target="_blank"
+          rel="noopener noreferrer"
+          :class="`text-white text-lg lg:text-xl py-3 px-3.5 rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition-colors flex flex-row items-center`"
+        >
+          <font-awesome-icon
+            icon="fa-brands fa-linkedin-in"
+          />
+        </NuxtLink>
+        <NuxtLink
           to="https://github.com/romariosc15"
-          icon="fa-brands fa-github"
-          :external="true"
-          cls="text-xl text-white px-3.5 py-2.5"
-        />
+          target="_blank"
+          rel="noopener noreferrer"
+          :class="`text-white text-lg lg:text-xl py-3 px-3.5 rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition-colors flex flex-row items-center`"
+        >
+          <font-awesome-icon
+            icon="fa-brands fa-github"
+          />
+        </NuxtLink>
       </div>
       <div>
         <NuxtLink

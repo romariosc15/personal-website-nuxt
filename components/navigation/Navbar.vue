@@ -1,7 +1,7 @@
 <template>
   <header class="flex flex-row py-4 items-center justify-between lg:justify-normal">
     <img
-      class="object-cover w-12 lg:w-14"
+      class="object-cover w-10 lg:w-14"
       src="@/assets/images/logo-rs.png"
       alt="App logo"
     >
@@ -26,7 +26,7 @@
     <InputListbox
       v-model="currentLanguage"
       class="lg:ml-6 w-20"
-      cls="text-white border border-slate-900 hover:bg-red-500 px-5 py-2.5 font-medium lg:font-semibold"
+      cls="text-sm lg:text-base text-white border border-slate-900 hover:bg-red-500 px-4 lg:px-5 py-2 lg:py-2.5 font-medium lg:font-semibold"
       :options="languages"
       @update:model-value="onUpdate"
     />
