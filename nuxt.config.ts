@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     LocaleModule,
     '@nuxtjs/i18n',
     'nuxt-vitest',
+    '@nuxtjs/robots',
   ],
   i18n: {
     defaultLocale: 'en',
