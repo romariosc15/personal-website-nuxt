@@ -13,6 +13,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
   app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en'
+      }
+    },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: [

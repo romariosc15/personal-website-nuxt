@@ -20,6 +20,7 @@
       </div>
       <div class="flex flex-row gap-4">
         <NuxtLink
+          aria-label="Open Romario's LinkedIn profile"
           to="https://www.linkedin.com/in/romariosarmiento/"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,6 +31,7 @@
           />
         </NuxtLink>
         <NuxtLink
+          aria-label="Open Romario's GitHub repository"
           to="https://github.com/romariosc15"
           target="_blank"
           rel="noopener noreferrer"
