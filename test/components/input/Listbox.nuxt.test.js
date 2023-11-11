@@ -4,11 +4,11 @@ import { mountSuspended } from 'nuxt-vitest/utils'
 
 const mountComponent = (options = {}) => mountSuspended(Listbox, {
     global: {
-        stubs: ['FontAwesomeIcon']
+        stubs: ['FontAwesomeIcon', 'Listbox']
     },
     props: {
         modelValue: {},
-        cls: "",
+        cls: '',
         options: [
             {}
         ],
