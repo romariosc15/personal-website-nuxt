@@ -1,6 +1,9 @@
 module.exports = {
-  'root': true,
-  'extends': [
+  root: true,
+  extends: [
     '@nuxt/eslint-config',
+  ],
+  plugins: [
+    'vitest',
   ],
 };

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     LocaleModule,
     '@nuxtjs/i18n',
+    'nuxt-vitest',
   ],
   i18n: {
     defaultLocale: 'en',
