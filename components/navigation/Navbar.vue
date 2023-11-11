@@ -1,7 +1,7 @@
 <template>
   <header class="flex flex-row py-4 items-center justify-between lg:justify-normal">
     <img
-      class="object-cover w-10 lg:w-14"
+      class="object-cover w-10 lg:w-14 h-full"
       src="@/assets/images/logo-rs.png"
       alt="App logo"
     >
