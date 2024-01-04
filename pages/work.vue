@@ -22,7 +22,7 @@
               rel="noopener noreferrer"
             >
               <img
-                class="rounded-xl object-cover w-full h-[200px] lg:[175px] xl:h-[250px] scale-100 hover:scale-110 transition-transform transform"
+                class="rounded-xl object-cover w-full h-[200px] lg:[175px] xl:h-[250px] scale-100 hover:scale-105 transition-transform transform"
                 :src="item.image"
                 :alt="item.name"
               >
@@ -32,11 +32,11 @@
                 {{ item.name }}
               </h3>
               <p class="text-sm xl:text-base text-gray-200 mt-2">
-                {{ item.description }}
+                {{ item.description[locale] }}
               </p>
               <div class="space-x-4 xl:space-x-6 mt-4 text-sm md:text-base xl:text-lg">
                 <a
-                  class="font-medium transition-colors hover:text-yellow-500"
+                  class="font-medium transition-colors hover:text-yellow-500 duration-300"
                   :href="item.repositoryUrl"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -47,7 +47,7 @@
                   />
                 </a>
                 <a
-                  class="font-medium transition-colors hover:text-yellow-500"
+                  class="font-medium transition-colors hover:text-yellow-500 duration-300"
                   :href="item.productionUrl"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -67,30 +67,29 @@
 </template>
 
 <script setup>
+const { locale } = useI18n()
 const projects = [
   {
     id: 1,
     name: 'Enjoyb',
-    description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    description: {
+      'en': `Application developed in Next.js and integrated with Contentful API to manage and post job opportunities.`,
+      'es': `Aplicación desarrollada en Next.js e integrada con Contentful API para gestionar y publicar oportunidades de trabajo.`
+    },
     repositoryUrl: 'https://github.com/romariosc15/enjoyb',
     productionUrl: 'https://enjoyb.vercel.app/',
     image: '/images/projects/enjoyb.png',
   },
   {
     id: 2,
-    name: 'Enjoyb',
-    description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-    repositoryUrl: 'https://github.com/romariosc15/enjoyb',
-    productionUrl: 'https://enjoyb.vercel.app/',
-    image: '/images/projects/enjoyb.png',
-  },
-  {
-    id: 3,
-    name: 'Enjoyb',
-    description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-    repositoryUrl: 'https://github.com/romariosc15/enjoyb',
-    productionUrl: 'https://enjoyb.vercel.app/',
-    image: '/images/projects/enjoyb.png',
+    name: 'Country quiz',
+    description: {
+      'en': `Application created with Vue 3 to generate quizzes with random questions about countries.`,
+      'es': `Aplicación creada con Vue 3 para generar cuestionarios con preguntas aleatorias sobre países.`
+    },
+    repositoryUrl: 'https://github.com/romariosc15/country-quiz',
+    productionUrl: 'https://country-quiz-sigma-three.vercel.app/',
+    image: '/images/projects/country-quiz.png',
   },
 ];
 </script>
