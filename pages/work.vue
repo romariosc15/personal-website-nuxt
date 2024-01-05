@@ -28,13 +28,13 @@
               >
             </a>
             <div class="mt-4">
-              <h3 class="text-xl xl:text-2xl font-semibold text-white">
+              <h3 class="text-lg xl:text-xl font-semibold text-white">
                 {{ item.name }}
               </h3>
-              <p class="text-sm xl:text-base text-gray-200 mt-2">
+              <p class="text-xs lg:text-sm font-light text-gray-200 mt-2">
                 {{ item.description[locale] }}
               </p>
-              <div class="space-x-4 xl:space-x-6 mt-4 text-sm md:text-base xl:text-lg">
+              <div class="space-x-4 xl:space-x-6 mt-4">
                 <a
                   class="font-medium transition-colors hover:text-yellow-500 duration-300"
                   :href="item.repositoryUrl"
@@ -42,19 +42,19 @@
                   rel="noopener noreferrer"
                 >
                   <font-awesome-icon
+                    class="!align-middle text-xl lg:text-2xl"
                     icon="fa-brands fa-github"
-                    size="2xl"
                   />
                 </a>
                 <a
-                  class="font-medium transition-colors hover:text-yellow-500 duration-300"
+                  class="font-medium transition-colors hover:text-yellow-500 duration-200"
                   :href="item.productionUrl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <font-awesome-icon
+                    class="!align-middle text-base lg:text-xl"
                     icon="fa-solid fa-arrow-up-right-from-square"
-                    size="xl"
                   />
                 </a>
               </div>
