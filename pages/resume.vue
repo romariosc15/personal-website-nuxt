@@ -23,10 +23,10 @@
             >
               <div>
                 <span class="text-xs xl:text-sm">{{ item.period }}</span>
-                <h3 class="text-lg xl:text-xl font-semibold">
+                <h3 class="text-lg xl:text-xl font-medium">
                   {{ item.career }}
                 </h3>
-                <p class="text-sm xl:text-base font-medium">
+                <p class="text-sm xl:text-base">
                   {{ `${item.entity} - ${item.location}` }}
                 </p>
               </div>
@@ -47,10 +47,10 @@
             >
               <div>
                 <span class="text-xs xl:text-sm">{{ item.period }}</span>
-                <h3 class="text-lg xl:text-xl font-semibold">
+                <h3 class="text-lg xl:text-xl font-medium">
                   {{ item.position }}
                 </h3>
-                <p class="text-sm xl:text-base font-medium">
+                <p class="text-sm xl:text-base">
                   {{ `${item.company} - ${item.location}` }}
                 </p>
               </div>
@@ -71,10 +71,10 @@
             >
               <div>
                 <span class="text-xs xl:text-sm">{{ item.period }}</span>
-                <h3 class="text-lg xl:text-xl font-semibold">
+                <h3 class="text-lg xl:text-xl font-medium">
                   {{ item.topic }}
                 </h3>
-                <p class="text-sm xl:text-base font-medium">
+                <p class="text-sm xl:text-base">
                   {{ `${item.entity}` }}
                 </p>
               </div>
@@ -90,7 +90,7 @@
 const education = [
   {
     id: 1,
-    entity: 'Universidad Nacional de Moquegua',
+    entity: 'UNAM Moquegua',
     period: 'March 2015 - December 2019',
     career: 'Systems engineering',
     location: 'Ilo',
@@ -122,7 +122,7 @@ const experience = [
     id: 104,
     company: 'Innovahora',
     period: 'September 2019 - August 2020',
-    position: 'Full-Stack Web Developer',
+    position: 'Full-Stack Developer',
     location: 'Remote',
   },
 ];
@@ -131,11 +131,11 @@ const certifications = [
     id: 201,
     entity: 'SCRUMstudy',
     period: 'July 2021',
-    topic: 'Scrum Fundamentals Certified',
+    topic: 'Scrum Fundamentals',
   },
   {
     id: 201,
-    topic: 'Certified Javascript Developer I',
+    topic: 'Javascript Developer I',
     entity: 'Salesforce',
     period: 'Jun 2021',
   },

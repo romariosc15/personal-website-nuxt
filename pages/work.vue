@@ -34,7 +34,7 @@
               <p class="text-xs lg:text-sm font-light text-gray-200 mt-2">
                 {{ item.description[locale] }}
               </p>
-              <div class="space-x-4 xl:space-x-6 mt-4">
+              <div class="space-x-4 xl:space-x-5 mt-4">
                 <a
                   class="font-medium transition-colors hover:text-yellow-500 duration-300"
                   :href="item.repositoryUrl"
