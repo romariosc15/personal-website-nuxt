@@ -44,7 +44,7 @@
       </div>
       <div>
         <NuxtLink
-          to="https://drive.google.com/file/d/1dFe7NpTgryYR7wUDLqYHiFPwsgddsQ4H/view?usp=sharing"
+          to="https://drive.google.com/file/d/1jJ3v6Bmag3KWBUt3jeyuMBJc-WtDCn_r/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           :class="`text-white text-base lg:text-lg font-semibold px-6 py-3 rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition-colors flex flex-row items-center`"
